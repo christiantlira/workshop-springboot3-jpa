@@ -30,8 +30,6 @@ public class Category implements Serializable {
 	@ManyToMany(mappedBy = "categories")
 	private Set<Product> products = new HashSet<>();
 	
-	//List<Product> list = ArrayList<>();
-	
 	public Category () {}
 	
 	public Category(Integer id, String name) {
